@@ -1,7 +1,8 @@
 <template>
   <div class="home-container">
-    <div class="gradient1"></div>
-    <div class="gradient2"></div>
+    <div class="home-title">
+        Hello
+    </div>
   </div>
 </template>
 

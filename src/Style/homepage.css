@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 .home-container {
     margin: 0;
     height: 100vh;
@@ -7,4 +8,16 @@
     background-size: 100% 100%;
     background-position: top left, top right;
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-direction: column;
+}
+.home-title{
+    font-weight: 500;
+    font-size: 5rem;
+    -webkit-text-stroke: 1px white;
+    letter-spacing: 3rem;
+    color: transparent;
 }
