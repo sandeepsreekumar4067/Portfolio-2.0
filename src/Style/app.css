@@ -16,3 +16,19 @@ html{
 *,html{
     font-family: "Quicksand", sans-serif;
 }
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+* {
+    font-family: "Lexend", sans-serif;
+    overflow-x: hidden;
+}
