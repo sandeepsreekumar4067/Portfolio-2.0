@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+:root{
+    --violet:rgb(110, 21, 197,1);
+    --violet2:rgb(37, 3, 79,0.7);
+    --violet3:rgb(28, 0, 61,0.3);
+    --blue:rgb(39, 89, 152,1);
+    --blue2:rgb(17, 30, 109,0.7);
+    --blue3:rgb(2, 1, 79,0.3);
+}
+html{
+    margin: 0;
+}

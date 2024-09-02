@@ -1,0 +1,10 @@
+.home-container {
+    margin: 0;
+    height: 100vh;
+    background:
+    radial-gradient(circle at top left, var(--violet)0%, var(--violet2) 50%, var(--violet3) 100%, transparent ) no-repeat,
+    radial-gradient(circle at top right, rgba(7, 150, 255, 1) -4%, rgba(0, 150, 255, 0.7) 10%, rgba(0, 150, 255, 0.3) 40%, transparent ) no-repeat;
+    background-size: 100% 100%;
+    background-position: top left, top right;
+    background-color: black;
+}
