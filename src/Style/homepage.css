@@ -15,9 +15,31 @@
     flex-direction: column;
 }
 .home-title{
-    font-weight: 500;
+    font-weight: 900;
     font-size: 5rem;
     -webkit-text-stroke: 1px white;
     letter-spacing: 3rem;
     color: transparent;
+}
+.home-name{
+    font-size: 3rem;
+    -webkit-text-stroke: 1px white;
+    font-weight: 900;
+    color: transparent;
+}
+.home-name span{
+    -webkit-text-stroke: none;
+    color: white;
+    font-weight: 400;
+}
+.home-about{
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1px white;
+    font-weight: 900;
+    color: transparent;   
+}
+.home-about span{
+    -webkit-text-stroke: none;
+    color: white;
+    font-weight: 400;
 }
