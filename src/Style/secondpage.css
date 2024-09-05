@@ -1,4 +1,4 @@
-.secondPage-container{
+.secondPage-container {
     height: 200vh;
     width: 100%;
     display: flex;
@@ -6,33 +6,43 @@
     justify-content: start;
     flex-direction: column;
     background-color: black;
-    color: white;
     text-align: center;
     box-sizing: border-box;
     position: relative;
-}
-
-.secondPage-display-container{
+  }
+  
+  .secondPage-display-container {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
-}
-.secondPage-circle-container{
+  }
+  
+  .secondPage-circle-container {
     height: 10rem;
     width: 10rem;
     background-color: white;
     border-radius: 50%;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.5); /* Adds a glowing effect */
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: start;
     justify-content: center;
-}
-.secondPage-circle-container span{
-    color: black;
     opacity: 0;
-    transform: translateX(-100%);
+}
+
+/* Gradient at the top of the circle */
+.secondPage-circle-container::before {
+    content: 'hello';
+    position: absolute;
+    top: -2rem; /* Adjust to position the gradient above the circle */
+    left: 0;
+    color: black;
+    right: 0;
+    background-color: red;
+    height: 4rem; /* Adjust the height to control the gradient area */
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0)); /* White to transparent gradient */
+    z-index: 10; /* Make sure it's behind the circle */
 }
