@@ -4,7 +4,7 @@
       Hi, I'm Sandeep Sreekumar I'm a Full Stack Developer with a focus on web
       and mobile applications.
     </span>
-    <span id="sc2">
+    <!-- <span id="sc2">
       I specialize in Frontend Development using HTML, CSS, JavaScript, React,
       and Vue.js
     </span>
@@ -17,7 +17,7 @@
     </span>
     <span id="sc5">
         I'm passionate about building intuitive and impactful digital solutions
-    </span>
+    </span> -->
   </div>
 </template>
 
@@ -33,6 +33,18 @@ export default {
     },
     mounted(){
         gsap.registerPlugin(ScrollTrigger);
+        gsap.from('#sc1',{
+            scrollTrigger:{
+                trigger:'#sc1',
+                start:'top 60%',
+                end:'top 50%',
+                toggleActions:'play pause reverse replay'
+            },
+            y:100,
+            opacity:0,
+            duration:0.8
+        })
+
     }
 };
 </script>
