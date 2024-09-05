@@ -1,5 +1,5 @@
 .secondPage-container{
-    height: 100vh;
+    height: 200vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -14,5 +14,14 @@
 .secondPage-display-container{
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+.secondPage-circle-container{
+    height: 10rem;
+    width: 10rem;
     background-color: white;
+    border-radius: 50%;
 }
