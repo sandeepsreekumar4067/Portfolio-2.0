@@ -33,31 +33,6 @@ export default {
     },
     mounted(){
         gsap.registerPlugin(ScrollTrigger);
-        const spans = document.querySelectorAll('.secondPage-container span')
-        spans.forEach((span)=>{
-            gsap.fromTo(span,{
-                opacity:0,
-                y:100
-            },{
-                opacity:1,
-                y:0,
-                scrollTrigger:{
-                    trigger:span,
-                    start:'top 90%',
-                    end:'top 20%',
-                    scrub:true,
-
-                    toggleActions: 'play reverse play reverse',
-                    onEnter:()=>{
-                        gsap.to(span,{opacity:1,y:0,})
-                    },
-                    onLeave:()=>{
-                        gsap.to(span,{opacity:0,y:-100,})
-                    },
-                    
-                }
-            })
-        })
     }
 };
 </script>
