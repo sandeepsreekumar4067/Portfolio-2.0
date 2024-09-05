@@ -9,6 +9,7 @@
     color: white;
     text-align: center;
     box-sizing: border-box;
+    position: relative;
 }
 
 .secondPage-display-container{
@@ -24,4 +25,14 @@
     width: 10rem;
     background-color: white;
     border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5); /* Adds a glowing effect */
+    position: absolute;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.secondPage-circle-container span{
+    color: black;
+    opacity: 0;
+    transform: translateX(-100%);
 }
