@@ -1,5 +1,5 @@
 .secondPage-container{
-    height: 150vh;
+    height: 300vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -9,12 +9,13 @@
     color: white;
     text-align: center;
     box-sizing: border-box;
-    padding: 4rem;
-    gap: 10rem;
+    padding: 8rem;
+    gap: 18rem;
 }
 
 .secondPage-container span{
     font-size: 2.3rem;
     height: auto;
+    overflow: hidden;
     color: white;
 }
