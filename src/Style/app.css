@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 body{
     margin: 0;
     width: 100%;
@@ -14,7 +15,7 @@ html{
     margin: 0;
 }
 *,html{
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lexend", sans-serif;
 }
 *::-webkit-scrollbar {
     display: none;
