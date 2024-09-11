@@ -1,16 +1,18 @@
-.homepage-container{
+.homepage-container {
     height: 100vh;
     width: 100%;
     background-color: black;
 }
-.wrapper{
+
+.wrapper {
     height: 77%;
     width: 100%;
     display: flex;
     background-color: black;
 
 }
-.left-container{
+
+.left-container {
     height: 100%;
     width: 55%;
     background-color: #D7D7D7;
@@ -20,7 +22,8 @@
     justify-content: center;
     flex-direction: column;
 }
-.left-about-container{
+
+.left-about-container {
     height: 50%;
     text-align: left;
     width: 80%;
@@ -31,18 +34,22 @@
     flex-direction: column;
     box-sizing: border-box;
     padding: 1rem;
-    .left-title{
+
+    .left-title {
         font-size: 5rem;
     }
-    .left-name{
+
+    .left-name {
         font-size: 3rem;
     }
-    .left-desc{
+
+    .left-desc {
         color: #909090;
         font-size: 1.5rem;
     }
 }
-.left-button-container{
+
+.left-button-container {
     width: 80%;
     height: 30%;
     display: flex;
@@ -52,7 +59,8 @@
     box-sizing: border-box;
     padding: 0.5rem;
 }
-.left-button-container span{
+
+.left-button-container span {
     height: 5rem;
     width: 5rem;
     background-color: #C4C4C4;
@@ -63,7 +71,8 @@
     color: black;
     font-size: 2.5rem;
 }
-.right-container{
+
+.right-container {
     height: 100%;
     width: 50%;
     background-color: black;
@@ -71,32 +80,62 @@
     justify-content: start;
     display: flex;
 }
-.right-container img{
+
+.right-container img {
     height: 100%;
     width: 80%;
     object-fit: cover;
 }
 
-.bottom-container span{
+.bottom-container span {
     font-size: 2rem;
     width: 100%;
     display: flex;
-    align-items:start;
+    align-items: start;
     justify-content: start;
 }
-.bottom-container{
+
+.bottom-container {
     box-sizing: border-box;
     padding: 2rem;
     height: 23%;
     gap: 1rem;
     flex-direction: column;
     width: 100%;
-    text-align:center;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     font: 1.5rem;
     color: white;
     box-sizing: border-box;
-        overflow: hidden;
+    overflow: hidden;
+}
+
+@media screen and (max-width:300px) {
+    .bottom-container {
+        display: none;
+        height: 0;
+    }
+
+    .wrapper {
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .right-container {
+        height: 100%;
+        width: 100%;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .right-container img {
+        height: 100%;
+        width: 100%;
+    }
+    .left-container{
+        position: absolute;
+    }
 }
