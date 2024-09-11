@@ -4,7 +4,7 @@
     background-color: black;
 }
 .wrapper{
-    height: 85%;
+    height: 77%;
     width: 100%;
     display: flex;
     background-color: black;
@@ -67,4 +67,36 @@
     height: 100%;
     width: 50%;
     background-color: black;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+}
+.right-container img{
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.bottom-container span{
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    align-items:start;
+    justify-content: start;
+}
+.bottom-container{
+    box-sizing: border-box;
+    padding: 2rem;
+    height: 23%;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 1.5rem;
+    color: white;
+    box-sizing: border-box;
+        overflow: hidden;
 }
