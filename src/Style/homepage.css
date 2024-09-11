@@ -139,7 +139,7 @@
     }
     .left-container{
         position: absolute;
-        height: 100%;
+        height: 44%;
         width: 100%;
         clip-path: polygon(0 35%, 100% 2%, 100% 100%, 0% 100%);
         bottom: 0;
@@ -149,7 +149,7 @@
         justify-content: center;
     }
     .left-about-container{
-        margin-top: 1.8rem;
+        margin-top: 5rem;
         width: 100%;
         padding: 1rem;
         box-sizing: border-box;
@@ -157,7 +157,7 @@
         height: auto;
         flex-direction: column;
         .left-title{
-         font-size: 2rem;
+         font-size: 2.5rem;
          -webkit-text-stroke: 0.5px white;
          color: black;
          position: relative;
@@ -171,12 +171,17 @@
         }
     }
     .left-button-container{
-        position: absolute;
         width: 100%;
-        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-button-container span{
+        position: relative;
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 1.5rem;
         top: 0;
         right: 0;
         flex-direction: column;
-        background-color: red;
     }
 }
