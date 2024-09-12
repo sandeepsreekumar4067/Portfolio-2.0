@@ -21,7 +21,7 @@
       <span id="explore"> My Specialities </span>
       <div class="speciality-description">
         <span>
-          <img :src="frontEnd" alt="" />
+          <img :src="frontEnd" id="speciality-image" alt="" />
           <div class="title">Full Stack Development</div>
           <div class="description">
             I build comprehensive web and mobile applications by combining
@@ -33,7 +33,7 @@
           </div>
         </span>
         <span>
-          <img :src="fullStack" alt="" />
+          <img :src="fullStack" id="speciality-image" alt="" />
           <div class="title">Frontend Development</div>
           <div class="description">
             I craft dynamic and user-friendly interfaces with HTML, CSS,
@@ -44,7 +44,7 @@
           </div>
         </span>
         <span>
-          <img :src="mobileDev" alt="" />
+          <img :src="mobileDev" id="speciality-image" alt="" />
           <div class="title">Mobile Application Development</div>
           <div class="description">
             Using Flutter, I develop cross-platform mobile apps with a focus on
@@ -119,6 +119,44 @@ export default {
         duration:1,
         opacity:0,
         ease:'bounce.out'
+    })
+    gsap.from('.title',{
+        scrollTrigger:{
+            trigger:'.speciality-description',
+            start:'top 70%',
+            toggleActions:'play none none none'
+        },
+        x:-100,
+        duration:1,
+        ease:'power3.inOut',
+        opacity:0,
+        stagger:0.2
+    })
+    gsap.from('.description',{
+        scrollTrigger:{
+            trigger:'.speciality-description',
+            start:'top 70%',
+            toggleActions:'play none none none'
+        },
+        delay:0.3,
+        x:-100,
+        duration:1,
+        ease:'power3.inOut',
+        opacity:0,
+        stagger:0.2
+    })
+    gsap.from('#speciality-image',{
+        scrollTrigger:{
+            trigger:'.speciality-description',
+            start:'top 70%',
+            toggleActions:'play none none none'
+        },
+        delay:1,
+        x:-120,
+        duration:1,
+        ease:'power3.inOut',
+        opacity:1,
+        stagger:0.2
     })
   }
 };

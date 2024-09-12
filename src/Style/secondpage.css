@@ -1,5 +1,5 @@
 .second-page-container{
-    min-height: 100vh;
+    height: auto;
     width: 100%;
     z-index: 2;
     background-color: #D7D7D7;
@@ -31,17 +31,17 @@
     border: solid 5px black;
 }
 .about-me-description{
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
     font-size: 1.3rem;
     padding-left: 14rem;
     padding-right: 14rem;
 }
 .about-me-areas{
-    margin-top: 5rem;
-    width: 80%;
+    margin-top: 2rem;
+    width: 100%;
     overflow: hidden;
-    height: 35rem;
+    height: 40rem;
     align-items: center;
     justify-content: start;
     display: flex;
@@ -56,13 +56,13 @@
     overflow: hidden;
     flex-wrap: wrap;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-evenly;
     gap: 0.8rem;
 }
 .speciality-description span{
-    flex: 1 1 35%;
-    height: 15rem;
+    flex: 1 1 25%;
+    height: 20rem;
     color: black;
     position: relative;
     box-sizing: border-box;
