@@ -1,5 +1,7 @@
 <template>
-  helo
+  <div class="second-page-container">
+
+  </div>
 </template>
 
 <script>

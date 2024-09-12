@@ -50,6 +50,7 @@ export default {
     };
   },
   mounted(){
+
     gsap.from('#home-img',{
       duration:1.8,
       x:'50%',
