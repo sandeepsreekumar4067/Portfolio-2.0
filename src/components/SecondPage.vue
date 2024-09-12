@@ -78,7 +78,7 @@ export default {
     gsap.registerPlugin(ScrollTrigger)
     gsap.from('.about-me-container',{
         scrollTrigger:{
-        trigger:'.about-me-container span',
+        trigger:'.about-me-container',
         start:'top 60%',
         toggleActions:'play none none none'
       },
@@ -98,6 +98,27 @@ export default {
       duration:0.5,
       stagger:0.2,
       ease:'power3.inOut'
+    })
+    gsap.from('.about-me-description',{
+        scrollTrigger:{
+        trigger:'.about-me-description',
+        start:'top 60%',
+        toggleActions:'play none none none'
+      },
+      x:'-10%',
+      opacity:0,
+      duration:1,
+    })
+    gsap.from('#explore',{
+        scrollTrigger:{
+            trigger:'#explore',
+            start:'top 70%',
+            toggleActions:'play none none none'
+        },
+        y:-100,
+        duration:1,
+        opacity:0,
+        ease:'bounce.out'
     })
   }
 };
