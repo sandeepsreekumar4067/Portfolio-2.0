@@ -5,11 +5,11 @@
 }
 
 .wrapper {
-    height: 80%;
+    height: 100%;
     width: 100%;
     display: flex;
     background-color: black;
-    
+
 }
 
 .left-container {
@@ -89,30 +89,7 @@
     scale: 1;
 }
 
-.bottom-container span {
-    font-size: 2rem;
-    width: 100%;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-}
 
-.bottom-container {
-    box-sizing: border-box;
-    padding: 2rem;
-    height: 20%;
-    gap: 0.2rem;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    font: 1.5rem;
-    color: white;
-    box-sizing: border-box;
-    overflow: hidden;
-}
 
 @media screen and (max-width:800px) {
     .bottom-container {

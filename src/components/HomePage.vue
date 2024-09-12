@@ -28,14 +28,7 @@
         <img :src="homeImage" alt="" id="home-img" />
       </div>
     </div>
-    <div class="bottom-container">
-      <span>Hey Guys</span>
-      I'm a Full Stack Developer with a focus on web and mobile applications. I
-      specialize in Frontend Development using HTML, CSS, JavaScript, React, and
-      Vue.js, and also work on the backend with Python and FastAPI. Currently,
-      I'm pursuing a B.Tech in Computer Science and Engineering at VJCET. I'm
-      passionate about building intuitive and impactful digital solutions
-    </div>
+
   </div>
 </template>
 

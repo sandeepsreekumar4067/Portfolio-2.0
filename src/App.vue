@@ -1,36 +1,38 @@
 <template>
- <div class="panel">
+ <!-- <div class="panel">
   <HomePage />
- </div>
- <div class="panel">
-  <SecondPage/>
- </div>
+ </div> -->
+ <SecondPage/>
+ <!-- <div class="panel">
+ </div> -->
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue';
+// import HomePage from './components/HomePage.vue';
 import SecondPage from './components/SecondPage.vue';
 import './Style/app.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';  // Import Bootstrap CSS
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { gsap } from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 export default {
   name: 'App',
   components: {
-    HomePage,
+    // HomePage,
     SecondPage,
     // // ThirdPage
   },
   mounted(){
-    gsap.registerPlugin(ScrollTrigger)
-    gsap.utils.toArray('.panel').forEach((panel)=>{
-      ScrollTrigger.create({
-        trigger:panel,
-        start:'top top',
-        pin:true,
-        pinSpacing:false
-      })
-    })
+    // gsap.registerPlugin(ScrollTrigger)
+    // const panels = gsap.utils.toArray('.panel')
+    // panels.forEach((panel)=>{
+    //   ScrollTrigger.create({
+    //     trigger:panel,
+    //     start:'top top',
+    //     pin:true,
+    //     pinSpacing:false,
+    //     snap:1
+    //   })
+    // })
   }
 }
 </script>
