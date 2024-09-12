@@ -76,11 +76,28 @@ export default {
   },
   mounted(){
     gsap.registerPlugin(ScrollTrigger)
-    gsap.to('.about-me-container span',{
+    gsap.from('.about-me-container',{
+        scrollTrigger:{
+        trigger:'.about-me-container span',
+        start:'top 60%',
+        toggleActions:'play none none none'
+      },
+      duration:0.8,
+      border:'solid 0px black',
+      ease:'power2.inOut'
+    })
+    gsap.from('.about-me-container span',{
       scrollTrigger:{
         trigger:'.about-me-container span',
-        start:'top 50%'
-      }  
+        start:'top 50%',
+        toggleActions:'play none none none'
+      },
+      x:-100,
+      opacity:0,
+      delay:0.8,
+      duration:0.5,
+      stagger:0.2,
+      ease:'power3.inOut'
     })
   }
 };
