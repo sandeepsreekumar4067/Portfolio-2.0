@@ -152,7 +152,7 @@ export default {
             toggleActions:'play none none none'
         },
         delay:1,
-        x:-120,
+        x:-155,
         duration:1,
         ease:'power3.inOut',
         opacity:1,
