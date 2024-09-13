@@ -1,8 +1,6 @@
 <template>
- <div class="panel">
-  <HomePage />
- </div>
- <div class="panel">
+  <div class="main-container">
+   <HomePage />
    <SecondPage/>
  </div>
 </template>
@@ -23,16 +21,20 @@ export default {
   },
   mounted(){
     gsap.registerPlugin(ScrollTrigger)
-    const panels = gsap.utils.toArray('.panel')
-    panels.forEach((panel)=>{
-      ScrollTrigger.create({
-        trigger:panel,
-        start:'top top',
-        pin:true,
-        pinSpacing:false,
-        snap:1
-      })
-    })
+    // gsap.to("#second-container", {
+    //   scrollTrigger: {
+    //     trigger: "#first-container", // Trigger when the HomePage comes into view
+    //     start: "top top", // Start the animation when the top of HomePage hits the top of the viewport
+    //     // end: "bottom top", // End the animation when the bottom of HomePage hits the top of the viewport
+    //     scrub: true, // Smooth animation linked to scroll position
+    //     pin: "#first-container", // Pin the HomePage while the SecondPage scrolls over it
+    //   },
+    //   y: "-70%", // Move the SecondPage up over HomePage
+    //   ease: "none", // Linear easing to smoothly stack
+    // });
   }
 }
 </script>
+<style>
+  
+</style>

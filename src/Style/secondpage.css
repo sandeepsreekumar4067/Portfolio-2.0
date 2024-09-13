@@ -41,13 +41,13 @@
     margin-top: 2rem;
     width: 100%;
     overflow: hidden;
-    height: 40rem;
+    height: auto;
     align-items: center;
     justify-content: start;
     display: flex;
     flex-direction: column;
     box-sizing:border-box;
-    padding: 0.5rem;
+    padding: 2rem;
     gap: 2rem;
 }
 .speciality-description{
@@ -57,12 +57,12 @@
     flex-wrap: wrap;
     display: flex;
     align-items: start;
-    justify-content: space-evenly;
-    gap: 0.8rem;
+    justify-content: center;
+    gap: 3rem;
 }
 .speciality-description span{
-    flex: 1 1 25%;
-    height: 20rem;
+    flex: 1 1 35%;
+    height: auto;
     color: black;
     position: relative;
     box-sizing: border-box;

@@ -1,5 +1,5 @@
 <template>
-  <div class="second-page-container">
+  <div class="second-page-container" id="second-container">
     <div class="about-me-container">
       <span>A</span>
       <span>b</span>
@@ -21,7 +21,7 @@
       <span id="explore"> My Specialities </span>
       <div class="speciality-description">
         <span>
-          <img :src="frontEnd" id="speciality-image" alt="" />
+          <img :src="fullStack" id="speciality-image" alt="" />
           <div class="title">Full Stack Development</div>
           <div class="description">
             I build comprehensive web and mobile applications by combining
@@ -33,7 +33,7 @@
           </div>
         </span>
         <span>
-          <img :src="fullStack" id="speciality-image" alt="" />
+          <img :src="frontEnd" id="speciality-image" alt="" />
           <div class="title">Frontend Development</div>
           <div class="description">
             I craft dynamic and user-friendly interfaces with HTML, CSS,
@@ -152,7 +152,7 @@ export default {
             toggleActions:'play none none none'
         },
         delay:1,
-        x:-120,
+        x:-155,
         duration:1,
         ease:'power3.inOut',
         opacity:1,
