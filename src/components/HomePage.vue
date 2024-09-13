@@ -1,5 +1,5 @@
 <template>
-  <div class="homepage-container" id="first-container">
+  <div class="homepage-container" >
     <div class="wrapper">
       <div class="left-container">
         <div class="left-about-container">

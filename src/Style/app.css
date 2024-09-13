@@ -2,7 +2,7 @@
 body{
     margin: 0;
     width: 100%;
-    background-color:#D7D7D7 ;
+    background-color:red ;
 }
 :root{
     --violet:rgb(110, 21, 197,1);

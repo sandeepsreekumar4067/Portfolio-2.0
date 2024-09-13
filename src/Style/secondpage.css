@@ -1,5 +1,5 @@
 .second-page-container{
-    height: auto;
+    height: 125vh;
     width: 100%;
     z-index: 2;
     background-color: #D7D7D7;
@@ -8,7 +8,7 @@
     justify-content: start;
     flex-direction: column;
     box-sizing: border-box;
-
+    overflow-y: scroll;
     padding-bottom: 3rem;
 }
 .about-me-container{

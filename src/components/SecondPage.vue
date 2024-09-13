@@ -1,5 +1,5 @@
 <template>
-  <div class="second-page-container" id="second-container">
+  <div class="second-page-container" >
     <div class="about-me-container">
       <span>A</span>
       <span>b</span>
