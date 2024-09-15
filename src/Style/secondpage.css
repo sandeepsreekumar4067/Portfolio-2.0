@@ -1,5 +1,5 @@
 .second-page-container{
-    height: 125vh;
+    height: auto;
     width: 100%;
     z-index: 2;
     background-color: #D7D7D7;
@@ -8,7 +8,6 @@
     justify-content: start;
     flex-direction: column;
     box-sizing: border-box;
-    overflow-y: scroll;
     padding-bottom: 3rem;
 }
 .about-me-container{
@@ -36,6 +35,7 @@
     font-size: 1.3rem;
     padding-left: 14rem;
     padding-right: 14rem;
+    height: auto;
 }
 .about-me-areas{
     margin-top: 2rem;

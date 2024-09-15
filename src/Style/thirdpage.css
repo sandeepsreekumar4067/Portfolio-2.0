@@ -1,5 +1,37 @@
 .third-page-container{
-    height: 100vh;
-    background-color: black;
+    height: 400vh;
+    background-color: #D7D7D7;
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.third-page-components{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.circle{
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    width: 20%;
+    display: flex;
+    opacity: 1;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+.skill-container{
+    height: 60%;
+    width: 80%;
+    background-color: red;
 }
