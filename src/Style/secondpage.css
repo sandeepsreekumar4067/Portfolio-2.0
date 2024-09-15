@@ -94,24 +94,29 @@
         font-size: 1.3rem;
         padding: 1rem;
     }
+    .about-me-areas{
+        padding: 0.5rem;
+    }
     .about-me-description{
         padding: 1rem;
         font-size: 1rem;
         height: auto;
     }
     #explore{
-        width: 90%;
+        width: 100%;
         padding: 1rem;
         font-size: 1.3rem;
     }
     .speciality-description span{
         flex: 1 1 100%;
+        padding: 0;
+        text-align: center;
     }
     .speciality-description span img{
         height: 30%;
     }
     .title{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin: 1rem;
     }
 }
