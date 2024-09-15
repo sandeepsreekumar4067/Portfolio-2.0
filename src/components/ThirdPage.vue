@@ -2,7 +2,20 @@
   <div class="third-page-container" id="tmain">
     <div class="third-page-components" id="components">
       <div class="skill-title">My Skills</div>
-      <div class="skill-container1"></div>
+      <div class="skill-container1">
+        <div class="row">
+          <div class="row-title">Programming Languages</div>
+          <div class="skill-component">
+            <span
+              v-for="(languageIcon, key) in pl"
+              :key="key"
+              class="skill-images"
+            >
+              <img :src="languageIcon" alt="" />
+            </span>
+          </div>
+        </div>
+      </div>
       <div class="skill-container2"></div>
       <div class="skill-container3"></div>
       <div class="skill-container4"></div>
@@ -65,53 +78,57 @@ export default {
   },
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
-    // const timeline = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: "#components",
-    //     start: "top 10%",
-    //     pin: true,
-    //     scrub: 1,
-    //     endTrigger: "#tmain",
-    //     end: "bottom bottom",
-    //     toggleActions: 'play reverse play reverse', // Ensures the animation reverses when scrolling back up
-    //   },
-    // });
-    // timeline.from(".skill-title", {
-    //   opacity: 0,
-    //   x:-300
-    // });
-     gsap.timeline({
+
+    gsap.timeline({
       scrollTrigger: {
         trigger: ".skill-title",
         pin: true,
         start: "top 8%",
-        markers:true,
         endTrigger: "skill-title",
       },
     });
-    gsap.from('.skill-title',{
-      scrollTrigger:{
-        trigger:'.skill-title',
-        start:'top 50%',
-        scrub:1,
-        end:'top 8%'
+    gsap.from(".skill-title", {
+      scrollTrigger: {
+        trigger: ".skill-title",
+        start: "top 90%",
+        scrub: 1,
+        end: "top 8%",
       },
-      x:-500,
-      duration:1.8,
-      opacity:0
-    })
-    // gsap.from(".skill-title", {
-    //   scrollTrigger: {
-    //     trigger: "#components",
-    //     start: "top 20%",
-    //     scrub: 1,
-    //     pin: true,
-    //     pinSpacing: false,
-    //   },
-    //   x: -300,
-    //   opacity: 0,
-    // });
+      x: -500,
+      opacity: 0,
+    });
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".row",
+        pin: true,
+        start: "top 20%",
+        endTrigger: ".skill-container1",
+        end: "bottom 70%",
+      },
+    });
+    gsap.from(".row-title", {
+      scrollTrigger: {
+        trigger: ".row-title",
+        start: "top 70%",
+        scrub: 1,
+        end: "top 20%",
+      },
+      x: -300,
+      opacity: 0,
+    });
+    gsap.from(".skill-images", {
+      scrollTrigger: {
+        trigger: ".skill-container1", // The container for the images
+        start: "top 50%", // When to start the animation
+        end: "top 20%", // When to end the animation
+        scrub: 1, // Smooth scrolling
+      },
+      scale: 0, // Start with scale 0
+      opacity: 0, // Start with opacity 0
+      stagger: 0.2, // Delay between each image's animation
+      ease: "back.out(1.7)", // Ease effect
+    });
+
   },
 };
 </script>
-
