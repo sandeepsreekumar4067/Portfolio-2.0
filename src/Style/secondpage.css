@@ -8,7 +8,6 @@
     justify-content: start;
     flex-direction: column;
     box-sizing: border-box;
-
     padding-bottom: 3rem;
 }
 .about-me-container{
@@ -36,18 +35,19 @@
     font-size: 1.3rem;
     padding-left: 14rem;
     padding-right: 14rem;
+    height: auto;
 }
 .about-me-areas{
     margin-top: 5rem;
     width: 80%;
     overflow: hidden;
-    height: 35rem;
+    height: auto;
     align-items: center;
     justify-content: start;
     display: flex;
     flex-direction: column;
     box-sizing:border-box;
-    padding: 0.5rem;
+    padding: 2rem;
     gap: 2rem;
 }
 .speciality-description{
@@ -56,13 +56,13 @@
     overflow: hidden;
     flex-wrap: wrap;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 0.8rem;
+    align-items: start;
+    justify-content: center;
+    gap: 3rem;
 }
 .speciality-description span{
     flex: 1 1 35%;
-    height: 15rem;
+    height: auto;
     color: black;
     position: relative;
     box-sizing: border-box;
@@ -84,4 +84,34 @@
 .desciption{
     text-align: center;
 
+}
+@media screen and (max-width:300px) {
+    .second-page-container{
+        height: auto;
+    }
+    .about-me-container{
+        width: 70%;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    .about-me-description{
+        padding: 1rem;
+        font-size: 1rem;
+        height: auto;
+    }
+    #explore{
+        width: 90%;
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+    .speciality-description span{
+        flex: 1 1 100%;
+    }
+    .speciality-description span img{
+        height: 30%;
+    }
+    .title{
+        font-size: 1.3rem;
+        margin: 1rem;
+    }
 }

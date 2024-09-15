@@ -1,15 +1,20 @@
+.home-wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
 .homepage-container {
     height: 100vh;
     width: 100%;
-    background-color: black;
+    border: none;
 }
-
 .wrapper {
     height: 100%;
     width: 100%;
     display: flex;
     background-color: black;
-
 }
 
 .left-container {
