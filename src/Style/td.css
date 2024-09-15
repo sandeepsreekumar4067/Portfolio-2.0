@@ -1,0 +1,13 @@
+.third-page-container{
+    height: 300dvh;
+    width: 100%;
+    display: flex;
+    background-color: #D7D7D7;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+.skill-title{
+    font-size: 2rem;
+    opacity: 1;
+}

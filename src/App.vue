@@ -1,13 +1,13 @@
 <template>
   <HomePage />
   <SecondPage />
-  <ThirdPage />
+  <TD />
 </template>
 
 <script>
 import HomePage from './components/HomePage.vue';
 import SecondPage from './components/SecondPage.vue';
-import ThirdPage from './components/ThirdPage.vue';
+import TD from './components/TD.vue';
 import './Style/app.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';  // Import Bootstrap CSS
 import { gsap } from 'gsap';
@@ -17,7 +17,7 @@ export default {
   components: {
     HomePage,
     SecondPage,
-    ThirdPage,
+    TD,
   },
   mounted(){
     gsap.registerPlugin(ScrollTrigger)
