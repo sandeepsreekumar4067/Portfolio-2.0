@@ -16,20 +16,21 @@
           </div>
         </div>
       </div>
-      <!-- <div class="skill-container2">
-        <div class="row">
-          <div class="row-title">Web Development</div>
-          <div class="skill-component">
+      <div class="skill-container2">
+        <div class="row row2">
+          <div class="row-title row-title-2">Web Development</div>
+          <div class="skill-component skill-component-2">
             <span
               v-for="(languageIcon, key) in wd"
               :key="key"
-              class="skill-images"
+              class="skill-images-2"
             >
               <img :src="languageIcon" alt="" />
             </span>
           </div>
         </div>
       </div>
+      <!-- 
       <div class="skill-container3">
         <div class="row">
           <div class="row-title">Mobile App Development</div>
@@ -119,7 +120,7 @@ export default {
     gsap.registerPlugin(ScrollTrigger);
 
 
-
+    //for Programming Languages
 
     gsap.from(".skill-title", {
       scrollTrigger: {
@@ -164,6 +165,42 @@ export default {
       x:-300,
       opacity:0
     })
+
+    //for Web development
+
+    gsap.from(".row-title-2", {
+      scrollTrigger: {
+        trigger: ".row-title-2",
+        start: "top 70%",
+        scrub: 1,
+        end: "top 50%",
+      },
+      x: -300,
+      opacity: 0,
+    });
+    gsap.from(".skill-images-2", {
+      scrollTrigger: {
+        trigger: ".skill-component-2", // The container for the images
+        start: "top 60%", // When to start the animation
+        end: "top 50%", // When to end the animation
+        scrub: 1, // Smooth scrolling
+      },
+      scale: 0, // Start with scale 0
+      opacity: 0, // Start with opacity 0
+      stagger: 0.2, // Delay between each image's animation
+      ease: "back.out(1.7)", // Ease effect
+    });
+    gsap.to('.skill-title-2',{
+      scrollTrigger:{
+        trigger:'.skill-container2',
+        start:'bottom 80%',
+        scrub:1,
+        end:'bottom 60%'
+      },
+      x:-300,
+      opacity:0
+    })
+
   },
 };
 </script>
