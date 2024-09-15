@@ -2,7 +2,9 @@
   <div class="third-page-container" id="tmain">
     <div class="third-page-components" id="components">
       <div class="circle">My Skills</div>
-      <div class="skill-container"></div>
+      <div class="skill-container">
+
+      </div>
     </div>
   </div>
 </template>
@@ -23,12 +25,19 @@ export default {
         scrub: 1,
         endTrigger: "#tmain",
         end: "bottom bottom",
+        toggleActions: 'play reverse play reverse', // Ensures the animation reverses when scrolling back up
       },
     });
     timeline.from(".circle", {
       opacity: 0,
-      scale: 0,
+      x:-300
     });
+    timeline.from('.skill-container',{
+      width:'2rem',
+      height:'2rem',
+      opacity:0,    
+      snap:1
+    })
   },
 };
 </script>
