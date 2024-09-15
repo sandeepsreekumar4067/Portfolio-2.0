@@ -16,6 +16,7 @@
     align-items: center;
     overflow: visible;
     justify-content: start;
+    gap: 5rem;
     flex-direction: column;
 }
 
@@ -31,8 +32,7 @@
     justify-content: center;
 }
 .skill-container1{
-    margin-top: 10rem;
-    height: 25%;
+    height: auto;
     width: 90%;
     background-color: red;
     box-sizing: border-box;
@@ -45,7 +45,7 @@
     padding: 1rem;
 }
 .row{
-    height: 20%;
+    height: 100%;
     width: 100%;
     background-color: white;
     display: flex;
@@ -76,45 +76,56 @@
     width: 6rem;
 } 
 .skill-container2{
-    height: 25%;
+    height: auto;
     width: 90%;
     background-color: grey;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 1rem;
+    gap: 8rem;
     flex-direction: column;
     box-sizing: border-box;
     padding: 1rem;
 }
+.skill-container2 span img{
+    object-fit: contain;
+    width: 6rem;
+} 
 .skill-container3{
-    height: 25%;
+    height: auto;
     width: 90%;
     background-color: white;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 1rem;
+    gap: 8rem;
     flex-direction: column;
     box-sizing: border-box;
     padding: 1rem;
 }
+.skill-container3 span img{
+    object-fit: contain;
+    width: 6rem;
+} 
 .skill-container4{
-    height: 25%;
+    height: auto;
     width: 90%;
-    background-color: black;
+    background-color: white;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 1rem;
+    gap: 8rem;
     flex-direction: column;
     box-sizing: border-box;
     padding: 1rem;
 }
-
+.skill-container4 span img{
+    object-fit: contain;
+    width: 6rem;
+} 
 /* .skill-container p{
     font-size: 1.5rem;
 }

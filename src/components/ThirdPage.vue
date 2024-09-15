@@ -16,9 +16,48 @@
           </div>
         </div>
       </div>
-      <div class="skill-container2"></div>
-      <div class="skill-container3"></div>
-      <div class="skill-container4"></div>
+      <div class="skill-container2">
+        <div class="row">
+          <div class="row-title">Web Development</div>
+          <div class="skill-component">
+            <span
+              v-for="(languageIcon, key) in wd"
+              :key="key"
+              class="skill-images"
+            >
+              <img :src="languageIcon" alt="" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-container3">
+        <div class="row">
+          <div class="row-title">Mobile App Development</div>
+          <div class="skill-component">
+            <span
+              v-for="(languageIcon, key) in md"
+              :key="key"
+              class="skill-images"
+            >
+              <img :src="languageIcon" alt="" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-container3">
+        <div class="row">
+          <div class="row-title">Databases</div>
+          <div class="skill-component">
+            <span
+              v-for="(languageIcon, key) in db"
+              :key="key"
+              class="skill-images"
+            >
+              <img :src="languageIcon" alt="" />
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -79,14 +118,6 @@ export default {
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".skill-title",
-        pin: true,
-        start: "top 8%",
-        endTrigger: "skill-title",
-      },
-    });
     gsap.from(".skill-title", {
       scrollTrigger: {
         trigger: ".skill-title",
@@ -97,21 +128,13 @@ export default {
       x: -500,
       opacity: 0,
     });
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".row",
-        pin: true,
-        start: "top 20%",
-        endTrigger: ".skill-container1",
-        end: "bottom 70%",
-      },
-    });
+
     gsap.from(".row-title", {
       scrollTrigger: {
         trigger: ".row-title",
         start: "top 70%",
         scrub: 1,
-        end: "top 20%",
+        end: "top 50%",
       },
       x: -300,
       opacity: 0,
@@ -119,8 +142,8 @@ export default {
     gsap.from(".skill-images", {
       scrollTrigger: {
         trigger: ".skill-component", // The container for the images
-        start: "top 50%", // When to start the animation
-        end: "top 20%", // When to end the animation
+        start: "top 60%", // When to start the animation
+        end: "top 50%", // When to end the animation
         scrub: 1, // Smooth scrolling
       },
       scale: 0, // Start with scale 0
