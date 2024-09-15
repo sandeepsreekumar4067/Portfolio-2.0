@@ -21,7 +21,7 @@
       <span id="explore"> My Specialities </span>
       <div class="speciality-description">
         <span>
-          <img :src="fullStack" id="speciality-image" alt="" />
+          <img :src="fullStack" class="speciality-image" alt="" id="img1" />
           <div class="title">Full Stack Development</div>
           <div class="description">
             I build comprehensive web and mobile applications by combining
@@ -33,7 +33,7 @@
           </div>
         </span>
         <span>
-          <img :src="frontEnd" id="speciality-image" alt="" />
+          <img :src="frontEnd" class="speciality-image" alt="" id="img2"/>
           <div class="title">Frontend Development</div>
           <div class="description">
             I craft dynamic and user-friendly interfaces with HTML, CSS,
@@ -44,7 +44,7 @@
           </div>
         </span>
         <span>
-          <img :src="mobileDev" id="speciality-image" alt="" />
+          <img :src="mobileDev" class="speciality-image" alt="" id="img2"/>
           <div class="title">Mobile Application Development</div>
           <div class="description">
             Using Flutter, I develop cross-platform mobile apps with a focus on
@@ -145,7 +145,7 @@ export default {
         opacity:0,
         stagger:0.2
     })
-    gsap.from('#speciality-image',{
+    gsap.from('.speciality-image',{
         scrollTrigger:{
             trigger:'.speciality-description',
             start:'top 70%',
