@@ -118,7 +118,7 @@ export default {
     });
     gsap.from(".skill-images", {
       scrollTrigger: {
-        trigger: ".skill-container1", // The container for the images
+        trigger: ".skill-component", // The container for the images
         start: "top 50%", // When to start the animation
         end: "top 20%", // When to end the animation
         scrub: 1, // Smooth scrolling
@@ -128,7 +128,16 @@ export default {
       stagger: 0.2, // Delay between each image's animation
       ease: "back.out(1.7)", // Ease effect
     });
-
+    gsap.to('.skill-title',{
+      scrollTrigger:{
+        trigger:'.skill-container',
+        start:'bottom 80%',
+        scrub:1,
+        end:'bottom 60%'
+      },
+      x:-300,
+      opacity:0
+    })
   },
 };
 </script>
