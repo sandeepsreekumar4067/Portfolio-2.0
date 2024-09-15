@@ -30,35 +30,35 @@
           </div>
         </div>
       </div>
-      <!-- 
       <div class="skill-container3">
-        <div class="row">
-          <div class="row-title">Mobile App Development</div>
-          <div class="skill-component">
+        <div class="row row3">
+          <div class="row-title row-title-3">Mobile App Development</div>
+          <div class="skill-component skill-component-3">
             <span
               v-for="(languageIcon, key) in md"
               :key="key"
-              class="skill-images"
+              class="skill-images-3"
             >
               <img :src="languageIcon" alt="" />
             </span>
           </div>
         </div>
       </div>
+      
       <div class="skill-container3">
-        <div class="row">
-          <div class="row-title">Databases</div>
-          <div class="skill-component">
+        <div class="row row4">
+          <div class="row-title row-title-4">Databases</div>
+          <div class="skill-component skill-component-4">
             <span
               v-for="(languageIcon, key) in db"
               :key="key"
-              class="skill-images"
+              class="skill-images-4"
             >
               <img :src="languageIcon" alt="" />
             </span>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -193,6 +193,77 @@ export default {
     gsap.to('.skill-title-2',{
       scrollTrigger:{
         trigger:'.skill-container2',
+        start:'bottom 80%',
+        scrub:1,
+        end:'bottom 60%'
+      },
+      x:-300,
+      opacity:0
+    })
+
+    //for mobile development
+
+    gsap.from(".row-title-3", {
+      scrollTrigger: {
+        trigger: ".row-title-3",
+        start: "top 70%",
+        scrub: 1,
+        end: "top 50%",
+      },
+      x: -300,
+      opacity: 0,
+    });
+    gsap.from(".skill-images-3", {
+      scrollTrigger: {
+        trigger: ".skill-component-3", // The container for the images
+        start: "top 60%", // When to start the animation
+        end: "top 50%", // When to end the animation
+        scrub: 1, // Smooth scrolling
+      },
+      scale: 0, // Start with scale 0
+      opacity: 0, // Start with opacity 0
+      stagger: 0.2, // Delay between each image's animation
+      ease: "back.out(1.7)", // Ease effect
+    });
+    gsap.to('.skill-title-3',{
+      scrollTrigger:{
+        trigger:'.skill-container3',
+        start:'bottom 80%',
+        scrub:1,
+        end:'bottom 60%'
+      },
+      x:-300,
+      opacity:0
+    })
+
+    //for database
+
+
+    gsap.from(".row-title-4", {
+      scrollTrigger: {
+        trigger: ".row-title-4",
+        start: "top 70%",
+        scrub: 1,
+        end: "top 50%",
+      },
+      x: -300,
+      opacity: 0,
+    });
+    gsap.from(".skill-images-4", {
+      scrollTrigger: {
+        trigger: ".skill-component-4", // The container for the images
+        start: "top 60%", // When to start the animation
+        end: "top 50%", // When to end the animation
+        scrub: 1, // Smooth scrolling
+      },
+      scale: 0, // Start with scale 0
+      opacity: 0, // Start with opacity 0
+      stagger: 0.2, // Delay between each image's animation
+      ease: "back.out(1.7)", // Ease effect
+    });
+    gsap.to('.skill-title-4',{
+      scrollTrigger:{
+        trigger:'.skill-container4',
         start:'bottom 80%',
         scrub:1,
         end:'bottom 60%'
