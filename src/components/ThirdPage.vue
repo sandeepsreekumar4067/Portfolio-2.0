@@ -3,20 +3,20 @@
     <div class="third-page-components" id="components">
       <div class="skill-title">My Skills</div>
       <div class="skill-container1">
-        <div class="row">
-          <div class="row-title">Programming Languages</div>
-          <div class="skill-component">
+        <div class="row row1">
+          <div class="row-title row-title-1">Programming Languages</div>
+          <div class="skill-component skill-component-1">
             <span
               v-for="(languageIcon, key) in pl"
               :key="key"
-              class="skill-images"
+              class="skill-images-1"
             >
               <img :src="languageIcon" alt="" />
             </span>
           </div>
         </div>
       </div>
-      <div class="skill-container2">
+      <!-- <div class="skill-container2">
         <div class="row">
           <div class="row-title">Web Development</div>
           <div class="skill-component">
@@ -57,7 +57,7 @@
             </span>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -118,6 +118,9 @@ export default {
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
 
+
+
+
     gsap.from(".skill-title", {
       scrollTrigger: {
         trigger: ".skill-title",
@@ -129,9 +132,9 @@ export default {
       opacity: 0,
     });
 
-    gsap.from(".row-title", {
+    gsap.from(".row-title-1", {
       scrollTrigger: {
-        trigger: ".row-title",
+        trigger: ".row-title-1",
         start: "top 70%",
         scrub: 1,
         end: "top 50%",
@@ -139,9 +142,9 @@ export default {
       x: -300,
       opacity: 0,
     });
-    gsap.from(".skill-images", {
+    gsap.from(".skill-images-1", {
       scrollTrigger: {
-        trigger: ".skill-component", // The container for the images
+        trigger: ".skill-component-1", // The container for the images
         start: "top 60%", // When to start the animation
         end: "top 50%", // When to end the animation
         scrub: 1, // Smooth scrolling
@@ -151,9 +154,9 @@ export default {
       stagger: 0.2, // Delay between each image's animation
       ease: "back.out(1.7)", // Ease effect
     });
-    gsap.to('.skill-title',{
+    gsap.to('.skill-title-1',{
       scrollTrigger:{
-        trigger:'.skill-container',
+        trigger:'.skill-container1',
         start:'bottom 80%',
         scrub:1,
         end:'bottom 60%'
