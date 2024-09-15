@@ -1,13 +1,45 @@
-.third-page-container{
-    height: 300dvh;
+.third-page-container {
+    height: 400vh; /* Using viewport height for dynamic scaling */
     width: 100%;
     display: flex;
     background-color: #D7D7D7;
     align-items: center;
     justify-content: start;
     flex-direction: column;
-}
-.skill-title{
+    padding: 2rem 0; /* Add padding to the top and bottom */
+  }
+  
+  .skill-title {
     font-size: 2rem;
     opacity: 1;
-}
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .skills-timeline {
+    position: relative;
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+    background-color: red;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .line {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    background-color: #000;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure it stays below skill boxes */
+  }
+
+  .skill-box{
+    width: 20%;
+    background-color: white;
+    height: 5rem;
+  }
