@@ -1,12 +1,12 @@
 <template>
-  <HomePage />
-  <SecondPage />
+  <!-- <HomePage />
+  <SecondPage /> -->
   <TD />
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue';
-import SecondPage from './components/SecondPage.vue';
+// import HomePage from './components/HomePage.vue';
+// import SecondPage from './components/SecondPage.vue';
 import TD from './components/TD.vue';
 import './Style/app.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';  // Import Bootstrap CSS
@@ -15,8 +15,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 export default {
   name: "App",
   components: {
-    HomePage,
-    SecondPage,
+    // HomePage,
+    // SecondPage,
     TD,
   },
   mounted(){

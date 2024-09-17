@@ -1,21 +1,7 @@
 <template>
   <div class="third-page-container">
     <div class="skill-title">My Skills</div>
-    <div class="skills-timeline">
-      <div class="line"></div>
-      <!-- <div
-        v-for="(skill, index) in skills"
-        :key="index"
-        class="skill-box"
-        :class="{ left: index % 2 === 0, right: index % 2 !== 0 }"
-      >
-        <img :src="c" alt="" class="skill-icon" />
-        <div class="skill-name">{{ skill.name }}</div>
-      </div> -->
-      <div v-for="(skill,key) in skills" :key="key" class="skill-box" >
-        
-      </div>
-    </div>
+    
   </div>
 </template>
   
