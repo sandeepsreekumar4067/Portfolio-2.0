@@ -22,7 +22,7 @@
 }
 
 .skill-title{
-    font-size: 2rem;
+    font-size: 3rem;
     box-sizing: border-box;
     padding: 0.5rem;
     width: 20%;
@@ -127,14 +127,35 @@
     object-fit: contain;
     width: 6rem;
 } 
-/* .skill-container p{
-    font-size: 1.5rem;
+@media screen and (max-width:300px) {
+    .third-page-components{
+        gap: 3rem;
+        padding-bottom: 5rem;
+    }
+    .skill-container1{
+        padding: 0.4rem;
+        gap: 3rem;
+        width: 100%;
+    }
+    .skill-title{
+        width:100%;
+        font-size: 2rem;
+    }
+    .row{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .row-title{
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .skill-component{
+        width: 100%;
+        flex-direction: column;
+    }
+    .skill-component span img{
+        object-fit: cover;
+        width: 3rem;
+    }
 }
-.skill-container .rows{
-    width: 100%;
-    height: 8rem;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}*/
