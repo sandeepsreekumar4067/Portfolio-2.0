@@ -127,6 +127,44 @@
     object-fit: contain;
     width: 6rem;
 } 
+
+@media screen and (max-width:800px) {
+    .third-page-container{
+        padding-bottom: 3rem;
+    }
+    .third-page-components{
+        gap: 3rem;
+        padding-bottom: 5rem;
+    }
+    .skill-container1{
+        padding: 0.4rem;
+        gap: 3rem;
+        width: 100%;
+    }
+    .skill-title{
+        width:100%;
+        font-size: 2rem;
+    }
+    .row{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .row-title{
+        width: 80%;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .skill-component{
+        width: 100%;
+        flex-direction: column;
+    }
+    .skill-component span img{
+        object-fit: cover;
+        width: 5rem;
+    }
+}
 @media screen and (max-width:300px) {
     .third-page-container{
         padding-bottom: 3rem;
