@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <!-- <div class="skill-container2">
+      <div class="skill-container2">
         <div class="row row2">
           <div class="row-title row-title-2">Web Development</div>
           <div class="skill-component skill-component-2">
@@ -44,7 +44,6 @@
           </div>
         </div>
       </div>
-      
       <div class="skill-container3">
         <div class="row row4">
           <div class="row-title row-title-4">Databases</div>
@@ -58,7 +57,7 @@
             </span>
           </div>
         </div>
-      </div> -->
+      </div> 
     </div>
   </div>
 </template>

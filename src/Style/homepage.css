@@ -83,12 +83,14 @@
     width: 50%;
     background-color: black;
     align-items: center;
+    overflow: hidden;
     justify-content: start;
     display: flex;
 }
 
 .right-container img {
     height: 100%;
+    overflow: hidden;
     width: 80%;
     object-fit: cover;
     scale: 1;

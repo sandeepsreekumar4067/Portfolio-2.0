@@ -128,6 +128,9 @@
     width: 6rem;
 } 
 @media screen and (max-width:300px) {
+    .third-page-container{
+        padding-bottom: 3rem;
+    }
     .third-page-components{
         gap: 3rem;
         padding-bottom: 5rem;
@@ -146,7 +149,9 @@
         gap: 2rem;
     }
     .row-title{
-        width: 100%;
+        width: 80%;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
         font-size: 1.5rem;
         text-align: center;
     }
@@ -156,6 +161,6 @@
     }
     .skill-component span img{
         object-fit: cover;
-        width: 3rem;
+        width: 3.5rem;
     }
 }
