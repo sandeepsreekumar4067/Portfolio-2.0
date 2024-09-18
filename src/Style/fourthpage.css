@@ -36,9 +36,25 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: red;
     opacity: 0;
     transition: opacity 0.5s ease; /* Smooth transition with delay */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.project-title{
+    color: white;
+    font-size: 1.5rem;
+}
+.project-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .project-container:hover img {
     opacity: 0.5; /* Adjust this value for desired opacity */
@@ -47,4 +63,26 @@
 .project-container:hover .cover-container{
     opacity: 0.8;
 
+}
+.project-left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+}
+.project-right{
+    width: 70%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    text-align: center;
 }

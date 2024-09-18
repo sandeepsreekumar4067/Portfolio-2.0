@@ -3,7 +3,17 @@
     <div class="project-container">
       <img :src="neonImg" alt="">
       <div class="cover-container">
-        
+        <div class="project-title">
+            Lex Ai (backend)
+        </div>
+        <div class="project-content">
+            <div class="project-left">
+                project Link
+            </div>
+            <div class="project-right">
+                This project is the backend for an AI legal consultant using LangChain technology to control a Large Language Model (LLM). It includes various components like `casualBot.py` and `lawyerBot.py` to handle different types of user interactions, potentially offering legal advice or information. The use of LangChain suggests advanced AI capabilities for managing and interpreting complex legal queries, while Python scripts manage tasks like data processing, training, and interactions with the LLM.
+            </div>
+        </div>
       </div>
     </div>
   </div>
