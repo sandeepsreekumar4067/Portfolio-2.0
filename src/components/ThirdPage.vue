@@ -126,7 +126,7 @@ export default {
         trigger: ".skill-title",
         start: "top 90%",
         scrub: 1,
-        end: "top 8%",
+        end: "top 50%",
       },
       x: -500,
       opacity: 0,
