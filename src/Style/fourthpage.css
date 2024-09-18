@@ -6,17 +6,45 @@
     flex-direction: column;
     justify-content: start;
     box-sizing: border-box;
+    background-color: #D7D7D7;
     padding: 1rem;
 }
 .project-container{
     height: 30rem;
     width: 60%;
-    background-color: red;
     border-radius: 30px;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    box-sizing: border-box;
-    padding: 1rem;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    position: relative;
+}
+.project-container img {
+    object-fit: cover;
+    height: 100%;
+    opacity: 1;
+    width: 100%;
+    transition: opacity 0.5s ease; /* Smooth transition with delay */
+}
+
+.cover-container{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Smooth transition with delay */
+}
+.project-container:hover img {
+    opacity: 0.5; /* Adjust this value for desired opacity */
+
+}
+.project-container:hover .cover-container{
+    opacity: 0.8;
+
 }
