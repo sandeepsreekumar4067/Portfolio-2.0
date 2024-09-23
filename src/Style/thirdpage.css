@@ -1,6 +1,6 @@
 .third-page-container{
     height: auto;
-    background-color: #D7D7D7;
+    background-color: var(--backgroundColor);
     width: 100%;
     overflow: hidden;
     display: flex;

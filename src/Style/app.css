@@ -11,6 +11,7 @@ body{
     --blue:rgb(39, 89, 152,1);
     --blue2:rgb(17, 30, 109,0.7);
     --blue3:rgb(2, 1, 79,0.3);
+    --backgroundColor:#D7D7D7;
 }
 html{
     margin: 0;
