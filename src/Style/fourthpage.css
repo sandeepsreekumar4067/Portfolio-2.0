@@ -54,41 +54,53 @@
     flex-wrap: wrap;
     overflow-y: scroll;
     background-color: #1A1A1A;
+    
 }
 .project-components span{
     flex: 1 1 25%;
     height: 50%;
-    background-color: red;
+    background-color: #1A1A1A;
+    cursor: pointer;
 }
-#id1 {
-    background-color: #FF5733; /* Red-Orange */
+.project-components span img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease; /* Smooth transition with delay */
+}
+.project-components span:hover img{
+    opacity: 0.5;
+}
+/* #id1 {
+    background-color: #FF5733;
   }
   
   #id2 {
-    background-color: #33FF57; /* Green */
+    background-color: #33FF57; 
   }
   
   #id3 {
-    background-color: #3357FF; /* Blue */
+    background-color: #3357FF; 
   }
   
   #id4 {
-    background-color: #FF33A1; /* Pink */
+    background-color: #FF33A1; 
   }
   
   #id5 {
-    background-color: #FFBD33; /* Yellow-Orange */
+    background-color: #FFBD33;
   }
   
   #id6 {
-    background-color: #33FFF5; /* Aqua */
+    background-color: #33FFF5; 
   }
   
   #id7 {
-    background-color: #FF33F5; /* Magenta */
+    background-color: #FF33F5; 
   }
   
   #id8 {
-    background-color: #9D33FF; /* Purple */
+    background-color: #9D33FF; 
   }
-  
+   */
+   

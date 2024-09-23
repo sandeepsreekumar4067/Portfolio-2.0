@@ -9,14 +9,30 @@
           <span>Projects</span>
         </div>
         <div class="project-components">
-          <span id="id1"></span>
-          <span id="id2"></span>
-          <span id="id3"></span>
-          <span id="id4"></span>
-          <span id="id5"></span>
-          <span id="id6"></span>
-          <span id="id7"></span>
-          <span id="id8"></span>
+          <span id="id1">
+            <img :src="projectimg" alt="">
+          </span>
+          <span id="id2">
+            <img :src="projectimg" alt="">
+          </span>
+          <span id="id3">
+            <img :src="projectimg" alt="">
+          </span>
+          <span id="id4">
+            <img :src="projectimg" alt="">
+          </span>
+          <span id="id5">
+            <img :src="projectimg" alt="">
+          </span>
+          <span id="id6">
+            <img :src="projectimg" alt="">
+          </span>
+          <span id="id7">
+            <img :src="projectimg" alt="">
+          </span>
+          <span id="id8">
+            <img :src="projectimg" alt="">
+          </span>
         </div>
       </div>
     </div>
@@ -26,12 +42,14 @@
 <script>
 import "../Style/fourthpage.css";
 import mountainImage from "../assets/background/mountainImage.jpg";
+import projectimg from '../assets/project images/img1 (1).jpg'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   data() {
     return {
       mountainImage: mountainImage,
+      projectimg:projectimg
     };
   },
   mounted() {
