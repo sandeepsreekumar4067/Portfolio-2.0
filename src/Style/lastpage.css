@@ -17,6 +17,7 @@
 .resume{
     margin-top: 3rem;
     font-size: 1.5rem;
+    overflow: hidden;
 }
 .resume span{
     color: transparent;
@@ -35,6 +36,7 @@
     padding: 2rem;
 }
 .social-title{
+    overflow: hidden;
     font-size: 2rem;
 }
 .social-media-components{
@@ -58,6 +60,7 @@
     font-size: 2rem;
     gap: 25%;
     text-align: center;
+    overflow: hidden;
 }
 .social-media-components span img{
     height: 90%;
