@@ -14,7 +14,7 @@
             <div class="proj-span">
               <div class="proj-title">{{ project.title }}</div>
               <div class="proj-desc">{{ project.description }}</div>
-              <div class="proj-link">View</div>
+              <div class="proj-link" @click="openProject(project.githubLink)">View</div>
             </div>
           </span>
         </div>
@@ -63,87 +63,92 @@ export default {
           description:
             "This project is a backend for an AI legal consultant utilizing LangChain to manage a Large Language Model (LLM). It includes Python scripts like `casualBot.py` and `lawyerBot.py` to handle various user interactions and provide legal advice. LangChain enhances the AI's ability to process and interpret complex legal queries.",
           projimage: projimg3,
-          githubLink: "",
+          githubLink: "https://github.com/sandeepsreekumar4067/LexAi-backend",
         },
         {
           title: "Tourism Promotion Website (MERN Stack)",
           description:
             "Designed and deployed a dynamic tourism website using the MERN stack, featuring visuals, interactive maps, and comprehensive travel guides for showcasing destinations.",
           projimage: projimg4,
-          githubLink: "",
+          githubLink: "https://github.com/sandeepsreekumar4067/ww",
         },
         {
-          title: "Vivavoce (Website)",
+          title: "MyAnswer (Website)",
           description:
-            "Developed Vivavoce, a website for blind students using Gemini technology, enabling tests through audio interfaces with personalized feedback and assessment.",
+            "Developed MyAnswer, a website for blind students using Gemini technology, enabling tests through audio interfaces with personalized feedback and assessment.",
           projimage: projimg5,
-          githubLink: "",
+          githubLink: "https://github.com/sandeepsreekumar4067/My-Answer",
         },
         {
           title: "AI Legal Consultant Website",
           description:
             "Built an AI-powered legal platform using LangChain and RAG for backend and React for frontend, featuring text extraction, conversational AI, and a responsive chat interface.",
           projimage: projimg6,
-          githubLink: "",
+          githubLink: "https://github.com/sandeepsreekumar4067/main-project",
         },
         {
-          title: "Space Exploration App (Flutter)",
+          title: "Space Elevator (Flutter)",
           description:
             "Created a Flutter app providing space exploration information, with captivating visuals and real-time data on missions, celestial bodies, and astronomical events.",
           projimage: projimg7,
-          githubLink: "",
+          githubLink: "https://github.com/sandeepsreekumar4067/SpaceElevator",
         },
         {
           title: "Review O (Intern at FSH Design)",
           description:
-            "Developed frontend interfaces with Vue.js and backend functionalities using Python and MySQL for a professional review system helping MNCs analyze customer satisfaction.",
+            "(Due to confidential nature i cannot share the code )Developed frontend interfaces with Vue.js and backend functionalities using Python and MySQL for a professional review system helping MNCs analyze customer satisfaction.",
           projimage: projimg8,
           githubLink: "",
         },
         {
           title: "Mint Investing (Intern at FSH Design)",
           description:
-            "Developed the backend using Python FastAPI and integrated MySQL for an investment platform, creating efficient API endpoints for mobile app data management.",
+            "(Due to confidential nature i cannot share the code )Developed the backend using Python FastAPI and integrated MySQL for an investment platform, creating efficient API endpoints for mobile app data management.",
           projimage: projimg9,
-          githubLink: "",
-        },
-        {
-          title: "Library Management System (Web)",
-          description:
-            "Developed a web-based library management system for cataloging, circulation, and administration, featuring book search, borrower management, and transaction tracking.",
-          projimage: projimg10,
           githubLink: "",
         },
         {
           title: "ByTheFans (Intern at FSH Design)",
           description:
-            "Enhanced frontend development for a community platform for sports enthusiasts, allowing fans to share updates and engage with like-minded individuals.",
+            "(Due to confidential nature i cannot share the code )Enhanced frontend development for a community platform for sports enthusiasts, allowing fans to share updates and engage with like-minded individuals.",
           projimage: projimg11,
           githubLink: "",
+        },
+        {
+          title: "Ktu QP Scrapper",
+          description:
+            "The KTU Question Paper Scraper API allows students to quickly and easily retrieve past exam papers from Kerala Technological University (KTU) for study purposes, automating the process of searching and downloading.",
+          projimage: projimg10,
+          githubLink: "https://github.com/sandeepsreekumar4067/KTU-qp-scapper",
         },
         {
           title: "Book Reselling Website (Web)",
           description:
             "Created a scalable platform for buying and selling second-hand books with features such as user profiles, listings, and secure payment gateways.",
           projimage: projimg12,
-          githubLink: "",
+          githubLink: "https://github.com/sandeepsreekumar4067/bookbuddies",
         },
         {
-          title: "Supermarket Prediction Model (Python Data Science)",
+          title: "Pawssible",
           description:
-            "Implemented a predictive model for supermarket inventory management using Python, optimizing stock levels and reducing waste with machine learning algorithms.",
+            "created a website that connects breeders, enabling them to buy and sell pets easily. The platform offers listings for various types of pets, providing a user-friendly interface for breeders to post ads, browse available pets, and make transactions seamlessly.",
           projimage: projimg13,
-          githubLink: "",
+          githubLink: "https://github.com/sandeepsreekumar4067/pawssible",
         },
         {
-          title: "Dictionary App (Flutter)",
+          title: "Wallet App (Flutter)",
           description:
-            "Developed a user-friendly dictionary app with features like search functionality and word suggestions for quick and efficient word lookup.",
+            "created a Flutter-based wallet app that allows users to manage their finances, track transactions, and store digital currencies. The app features a clean, intuitive interface, ensuring secure and seamless financial management on mobile devices.",
           projimage: projimg14,
-          githubLink: "",
+          githubLink: "https://github.com/sandeepsreekumar4067/Flutter-Wallet-App",
         },
       ],
     };
+  },
+  methods:{
+    openProject(link){
+      window.open(link,'_blank')
+    }
   },
   mounted() {
     gsap.registerPlugin(ScrollTrigger);

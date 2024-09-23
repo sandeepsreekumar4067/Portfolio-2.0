@@ -12,7 +12,7 @@
 }
 .about-me-container{
     width: 18%;
-    border: solid 5px black;
+    /* border: solid 5px black; */
     box-sizing: border-box;
     padding: 0.8rem;
     font-size: 2rem;
@@ -92,7 +92,7 @@
     }
     .about-me-container{
         width: 70%;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         padding: 1rem;
     }
     .about-me-areas{

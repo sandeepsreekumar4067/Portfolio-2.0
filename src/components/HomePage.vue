@@ -13,16 +13,16 @@
             </div>
           </div>
           <div class="left-button-container">
-            <span id="init-button">
-              <img :src="instagram" alt="" />
+            <span id="init-button" @click="openinstagram" >
+              <img :src="instagram" alt="" >
             </span>
-            <span id="button" class="button1">
+            <span id="button" class="button1" @click="openLinkedin">
               <img :src="linkedin" alt="" />
             </span>
-            <span id="button" class="button2">
+            <span id="button" class="button2" @click="opengithub">
               <img :src="github" alt="" />
             </span>
-            <span id="button" class="button3">
+            <span id="button" class="button3" @click="openX">
               <img :src="twitterX" alt="" />
             </span>
           </div>
@@ -54,6 +54,21 @@ export default {
       github: github,
     };
   },
+  methods:{
+    openinstagram(){
+      window.open('https://www.instagram.com/_.the.___.one._/','_blank')
+    },
+    openLinkedin(){
+      window.open('https://www.linkedin.com/in/sandeep-sreekumar4067','_blank')
+    },
+    openX(){
+      window.open('https://x.com/sandeep77368','_blank')
+    },
+    opengithub(){
+      window.open('https://github.com/sandeepsreekumar4067','_blank')
+    }
+  },
+
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({
