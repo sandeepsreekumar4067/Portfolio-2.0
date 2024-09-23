@@ -8,7 +8,16 @@
         <div class="fourth-page-title">
           <span>Projects</span>
         </div>
-        <div class="project-components"></div>
+        <div class="project-components">
+          <span id="id1"></span>
+          <span id="id2"></span>
+          <span id="id3"></span>
+          <span id="id4"></span>
+          <span id="id5"></span>
+          <span id="id6"></span>
+          <span id="id7"></span>
+          <span id="id8"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -32,15 +41,23 @@ export default {
         trigger: "#fcomp",
         start: "top top",
         pin: true,
-        endTrigger:'#fmain',
+        endTrigger: "#fmain",
         end: "bottom bottom",
-        scrub: 1,
       },
     });
     tl.from(".fourth-page-title", {
-      x:-100,
-      opacity:0
+      x: -100,
+      opacity: 0,
     });
+    tl.from(".project-components", {
+      yPercent: 100,
+      duration: 1.5,
+    });
+    tl.from('.project-components span',{
+      scale:0,
+      ease:'circ.inOut',
+      stagger:0.2
+    })
   },
 };
 </script>

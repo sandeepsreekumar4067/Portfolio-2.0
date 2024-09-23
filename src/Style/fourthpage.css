@@ -29,8 +29,12 @@
     left: 0;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 .fourth-page-title{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 20%;
     display: flex;
@@ -41,7 +45,50 @@
     font-size: 3rem;
 }
 .project-components{
+    position: absolute;
+    top: 20%;
+    left: 0;
     height: 80%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
     background-color: #1A1A1A;
 }
+.project-components span{
+    flex: 1 1 25%;
+    height: 50%;
+    background-color: red;
+}
+#id1 {
+    background-color: #FF5733; /* Red-Orange */
+  }
+  
+  #id2 {
+    background-color: #33FF57; /* Green */
+  }
+  
+  #id3 {
+    background-color: #3357FF; /* Blue */
+  }
+  
+  #id4 {
+    background-color: #FF33A1; /* Pink */
+  }
+  
+  #id5 {
+    background-color: #FFBD33; /* Yellow-Orange */
+  }
+  
+  #id6 {
+    background-color: #33FFF5; /* Aqua */
+  }
+  
+  #id7 {
+    background-color: #FF33F5; /* Magenta */
+  }
+  
+  #id8 {
+    background-color: #9D33FF; /* Purple */
+  }
+  
