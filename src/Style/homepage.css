@@ -9,6 +9,7 @@
     height: 100%;
     width: 100%;
     border: none;
+    box-sizing: border-box;
 }
 .wrapper {
     height: 100%;
@@ -166,6 +167,7 @@
         height: auto;
         align-items: center;
         justify-content: center;
+        margin-bottom: 1rem;
         padding: 0;
     }
     .left-button-container span{
@@ -242,6 +244,7 @@
         width: 100%;
         align-items: center;
         justify-content: center;
+        margin-bottom: 1rem;
     }
     .left-button-container span{
         position: relative;
