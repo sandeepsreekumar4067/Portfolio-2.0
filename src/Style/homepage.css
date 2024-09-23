@@ -6,7 +6,7 @@
 }
 
 .homepage-container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     border: none;
 }
@@ -70,14 +70,18 @@
 .left-button-container span {
     height: 3rem;
     width: 3rem;
-    background-color: #C4C4C4;
+    /* background-color: #C4C4C4; */
+    background-color: white;
     box-shadow: 0 3px 3px #909090;
     align-items: center;
     justify-content: center;
     display: flex;
     color: black;
+    box-sizing: border-box;
+    padding: 0.3rem;
     font-size: 1.8rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .right-container {

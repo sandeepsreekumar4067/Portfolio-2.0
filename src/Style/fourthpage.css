@@ -43,6 +43,7 @@
     justify-content: center;
 }
 .fourth-page-title span{
+    color: black;
     font-size: 3rem;
 }
 .project-components{

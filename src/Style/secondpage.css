@@ -27,7 +27,7 @@
     font-size: 2rem;
     box-sizing: border-box;
     padding: 0.5rem;
-    border: solid 5px black;
+    /* border: solid 5px black; */
 }
 .about-me-description{
     margin-top: 5rem;
@@ -72,7 +72,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 0.2;
+    opacity: 0.5;
     height: 40%;
 }
 .title{

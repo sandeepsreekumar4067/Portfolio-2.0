@@ -154,7 +154,7 @@ export default {
         pin: true,
         endTrigger: "#fmain",
         end: "bottom bottom",
-        toggleActions: "play pause none reverse"
+        toggleActions: "play none replay reverse"
       },
     });
     tl.from(".fourth-page-title", {
