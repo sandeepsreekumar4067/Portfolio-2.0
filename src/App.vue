@@ -3,11 +3,13 @@
   <SecondPage />
   <ThirdPage />
   <FourthPage/>
+  <LastPage/>
 </template>
 
 <script>
 import FourthPage from './components/FourthPage.vue';
 import HomePage from './components/HomePage.vue';
+import LastPage from './components/LastPage.vue';
 import SecondPage from './components/SecondPage.vue';
 import ThirdPage from './components/ThirdPage.vue';
 import './Style/app.css'
@@ -20,7 +22,8 @@ export default {
     HomePage,
     SecondPage,
     ThirdPage,
-    FourthPage
+    FourthPage,
+    LastPage
   },
   mounted(){
     gsap.registerPlugin(ScrollTrigger)
